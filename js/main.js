@@ -1,6 +1,19 @@
 (function ($) {
     "use strict";
 
+    // Navigation links active state on scroll
+    const navLinks = document.querySelectorAll('.nav-item.nav-link');
+
+    navLinks.forEach(link => {
+        link.addEventListener('click', function() {
+            // Remove 'active' class from all links
+            navLinks.forEach(l => l.classList.remove('active'));
+
+            // Add 'active' class to the clicked link
+            this.classList.add('active');
+        });
+    });
+
     // Spinner
     var spinner = function () {
         setTimeout(function () {
