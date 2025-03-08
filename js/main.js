@@ -5,12 +5,28 @@
     const navLinks = document.querySelectorAll('.nav-item.nav-link');
 
     navLinks.forEach(link => {
-        link.addEventListener('click', function() {
+        link.addEventListener('click', function(e) {
+            e.preventDefault();
+
+            // 点击跳转时考虑navbar的高度
+            const navbarHeight = document.querySelector('.navbar').offsetHeight;
+            const targetId = this.getAttribute('href');
+            const targetElement = document.querySelector(targetId);
+            const offsetPosition = targetElement.offsetTop - navbarHeight;
+    
+            if (targetElement) {
+                window.scrollTo({
+                    top: offsetPosition,
+                    behavior: 'smooth'
+                });
+            }
+
             // Remove 'active' class from all links
             navLinks.forEach(l => l.classList.remove('active'));
 
             // Add 'active' class to the clicked link
             this.classList.add('active');
+
         });
     });
 
