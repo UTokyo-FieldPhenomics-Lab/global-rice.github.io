@@ -426,16 +426,16 @@
 
 .testimonial-item {
     margin: 0 auto;
-    max-width: 600px;
+    /* max-width: 600px; */
     text-align: center;
-    background: #FFFFFF;
-    border: 30px solid var(--primary);
+    background: rgba(255, 255, 255, 0.9);
+    /* border: 30px solid var(--primary); */
 }
 
 .testimonial-item img {
     width: 60px !important;
-    height: 60px !important;
-    border-radius: 60px;
+    /* height: 60px !important; */
+    /* border-radius: 60px; */
 }
 
 .testimonial-carousel .owl-dots {
@@ -460,6 +460,31 @@
     width: 30px;
     background: var(--dark);
 }
+
+/*** logo layout ***/
+.logo-grid {
+    display: grid;
+    grid-template-columns: repeat(auto-fill, minmax(300px, 1fr)); /* 自动调整列数，最小300px */
+    gap: 20px; /* Logo 之间的间距 */
+}
+
+.logo-item {
+    display: flex;
+    align-items: center;
+    gap: 15px; /* Logo 和文字之间的间距 */
+    padding: 10px;
+}
+
+.logo-text {
+    text-align: left;
+}
+
+@media (max-width: 768px) {
+    .logo-grid {
+        grid-template-columns: repeat(auto-fill, minmax(200px, 1fr)); /* 小屏幕调整 */
+    }
+}
+
 
 
 /*** Footer ***/

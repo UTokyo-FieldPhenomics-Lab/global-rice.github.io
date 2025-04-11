@@ -14,7 +14,9 @@
     <!-- Google Web Fonts -->
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-    <link href="https://fonts.googleapis.com/css2?family=Open+Sans:wght@400;600&family=Playfair+Display:wght@700;900&display=swap" rel="stylesheet">
+    <link
+        href="https://fonts.googleapis.com/css2?family=Open+Sans:wght@400;600&family=Playfair+Display:wght@700;900&display=swap"
+        rel="stylesheet">
 
     <!-- Icon Font Stylesheet -->
     <link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.10.0/css/all.min.css" rel="stylesheet">
@@ -34,34 +36,37 @@
         .carousel-image-wrapper {
             position: relative;
             width: 100%;
-            padding-top: 55%; /* 16:9 Aspect Ratio (divide 9 by 16 = 0.5625) */
+            padding-top: 55%;
+            /* 16:9 Aspect Ratio (divide 9 by 16 = 0.5625) */
             overflow: hidden;
         }
-        
+
         .carousel-image-wrapper img {
             position: absolute;
             top: 0;
             left: 0;
             width: 100%;
             height: 100%;
-            object-fit: cover; /* Maintain aspect ratio and cover the area */
+            object-fit: cover;
+            /* Maintain aspect ratio and cover the area */
         }
 
         .shadowed-image {
             box-shadow: 10px 10px 20px rgba(0, 0, 0, 0.3);
         }
     </style>
-        
+
 </head>
 
 <body>
     <!-- Spinner Start -->
-    <div id="spinner" class="show bg-white position-fixed translate-middle w-100 vh-100 top-50 start-50 d-flex align-items-center justify-content-center">
+    <div id="spinner"
+        class="show bg-white position-fixed translate-middle w-100 vh-100 top-50 start-50 d-flex align-items-center justify-content-center">
         <div class="spinner-border text-primary" role="status" style="width: 3rem; height: 3rem;"></div>
     </div>
     <!-- Spinner End -->
 
-    
+
     <!-- Navbar Start -->
     <div class="container-fluid bg-white sticky-top" id="navbar">
         <div class="container">
@@ -69,7 +74,8 @@
                 <a href="index.html" class="navbar-brand">
                     <img class="img-fluid" src="img/logo.png" alt="Logo">
                 </a>
-                <button type="button" class="navbar-toggler ms-auto me-0" data-bs-toggle="collapse" data-bs-target="#navbarCollapse">
+                <button type="button" class="navbar-toggler ms-auto me-0" data-bs-toggle="collapse"
+                    data-bs-target="#navbarCollapse">
                     <span class="navbar-toggler-icon"></span>
                 </button>
                 <div class="collapse navbar-collapse" id="navbarCollapse">
@@ -114,9 +120,12 @@
                         <div class="container">
                             <div class="row justify-content-center">
                                 <div class="col-lg-7 text-center">
-                                    <p class="fs-4 text-white animated zoomIn">Welcome to <strong class="text-dark">official website</strong> of </p>
+                                    <p class="fs-4 text-white animated zoomIn">Welcome to <strong
+                                            class="text-dark">official website</strong> of </p>
                                     <h1 class="display-1 text-dark mb-4 animated zoomIn">Global RiceSEG Dataset</h1>
-                                    <p class="fs-4 text-white animated zoomIn">A Comprehensive and Diverse Collection of High-Resolution RGB-Annotated Images for the Development and Benchmarking of Rice Segmentation Algorithms</p>
+                                    <p class="fs-4 text-white animated zoomIn">A Comprehensive and Diverse Collection of
+                                        High-Resolution RGB-Annotated Images for the Development and Benchmarking of
+                                        Rice Segmentation Algorithms</p>
                                     <!-- <a href="#about" class="btn btn-light rounded-pill py-3 px-5 animated zoomIn">Download</a> -->
                                 </div>
                             </div>
@@ -168,8 +177,10 @@
                             <img class="img-fluid bg-white w-100 wow fadeIn" data-wow-delay="0.4s" src="img/about-2.jpg" alt="">
                         </div>
                     </div> -->
-                    <img class="img-fluid bg-white w-100 mb-3 wow fadeIn" data-wow-delay="0.1s" src="img/about-demo.png" alt="">
-                    <img class="img-fluid bg-white w-100 mb-3 wow fadeIn" data-wow-delay="0.2s" src="img/about-country.png" alt="">
+                    <img class="img-fluid bg-white w-100 mb-3 wow fadeIn" data-wow-delay="0.1s" src="img/about-demo.png"
+                        alt="">
+                    <img class="img-fluid bg-white w-100 mb-3 wow fadeIn" data-wow-delay="0.2s"
+                        src="img/about-country.png" alt="">
                 </div>
                 <div class="col-lg-9 wow fadeIn" data-wow-delay="0.3s">
                     <div class="section-title">
@@ -183,7 +194,8 @@
                         <div class="col-sm-12">
                             <h5>Objective</h5>
                             <p class="mb-0">
-                                To build a broad, multi-class, high-resolution semantic segmentation dataset for rice crops deep learning studies and applications.
+                                To build a broad, multi-class, high-resolution semantic segmentation dataset for rice
+                                crops deep learning studies and applications.
                             </p>
                         </div>
                     </div>
@@ -192,7 +204,10 @@
                         <div class="col-sm-12">
                             <h5>Dataset scale</h5>
                             <p class="mb-0">
-                                Includes <span class="text-primary">3,078</span> ground-based RGB images collected from <span class="text-primary">5</span> countries and <span class="text-primary">12</span> different institutions, taken along the whole growth cycle, and covering wide range of genotype-environment-management combinations.
+                                Includes <span class="text-primary">3,078</span> ground-based RGB images collected from
+                                <span class="text-primary">5</span> countries and <span class="text-primary">12</span>
+                                different institutions, taken along the whole growth cycle, and covering wide range of
+                                genotype-environment-management combinations.
                             </p>
                             </p>
                         </div>
@@ -212,7 +227,9 @@
             <div class="row g-0">
                 <div class="col-lg-9 py-5 wow fadeIn" data-wow-delay="0.1s">
                     <div class="py-5">
-                        <h1 class="display-6 mb-4">Global RiceSEG is an<span class="text-white">open-source</span> and <span class="text-white">free-to-use</span> dataset</h1>
+                        <h1 class="display-6 mb-4">Global RiceSEG is an <span class="text-white">open-source</span> and
+                            <span class="text-white">free-to-use</span> dataset
+                        </h1>
                         <h5 class="fw-normal lh-base fst-italic text-white mb-5">With the following features:</h5>
                         <div class="row g-4 mb-5">
                             <div class="col-sm-6">
@@ -264,15 +281,15 @@
                                 </div>
                             </div>
                         </div>
-                        <a class="btn btn-light rounded-pill py-3 px-5" target="_blank" href="https://huggingface.co/datasets/PheniX-Lab/RiceSEG">Download Dataset</a>
+                        <a class="btn btn-light rounded-pill py-3 px-5" target="_blank"
+                            href="https://huggingface.co/datasets/PheniX-Lab/RiceSEG">Download Dataset</a>
                     </div>
                 </div>
                 <div class="col-lg-3 wow fadeIn" data-wow-delay="0.5s">
                     <div class="h-100 d-flex align-items-center justify-content-center" style="min-height: 300px;">
                         <!-- replace youtube link here -->
                         <button type="button" class="btn-play" data-bs-toggle="modal"
-                            data-src="https://www.youtube.com/embed/dDlco5omfRs"
-                            data-bs-target="#videoModal">
+                            data-src="https://www.youtube.com/embed/dDlco5omfRs" data-bs-target="#videoModal">
                             <span></span>
                         </button>
                     </div>
@@ -283,7 +300,8 @@
     <!-- Video End -->
 
     <!-- Video Modal Start -->
-    <div class="modal modal-video fade" id="videoModal" tabindex="-1" aria-labelledby="exampleModalLabel" aria-hidden="true">
+    <div class="modal modal-video fade" id="videoModal" tabindex="-1" aria-labelledby="exampleModalLabel"
+        aria-hidden="true">
         <div class="modal-dialog">
             <div class="modal-content rounded-0">
                 <div class="modal-header">
@@ -293,8 +311,8 @@
                 <div class="modal-body">
                     <!-- 16:9 aspect ratio -->
                     <div class="ratio ratio-16x9">
-                        <iframe class="embed-responsive-item" src="" id="video" allowfullscreen allowscriptaccess="always"
-                            allow="autoplay"></iframe>
+                        <iframe class="embed-responsive-item" src="" id="video" allowfullscreen
+                            allowscriptaccess="always" allow="autoplay"></iframe>
 
                     </div>
                 </div>
@@ -310,15 +328,29 @@
                 <div class="col-lg-7 wow fadeIn" data-wow-delay="0.5s">
                     <div class="section-title">
                         <p class="fs-5 fw-medium fst-italic text-primary">Featured Acticle</p>
-                        <h4>lobal Rice Multi-Class Segmentation Dataset (RiceSEG): A Comprehensive and Diverse Collection of High-Resolution RGB-Annotated Images for the Development and Benchmarking of Rice Segmentation Algorithms</h4>
+                        <h4>lobal Rice Multi-Class Segmentation Dataset (RiceSEG): A Comprehensive and Diverse
+                            Collection of High-Resolution RGB-Annotated Images for the Development and Benchmarking of
+                            Rice Segmentation Algorithms</h4>
                     </div>
                     <p class="mb-4"><strong>Abstract</strong></p>
-                    <p class="mb-4">Developing computer vision–based rice phenotyping techniques is crucial for precision field management and accelerating breeding, thereby continuously advancing rice production. Among phenotyping tasks, distinguishing image components is a key prerequisite for characterizing plant growth and development at the organ scale, enabling deeper insights into eco-physiological processes. However, due to the fine structure of rice organs and complex illumination within the canopy, this task remains highly challenging, underscoring the need for a high-quality training dataset. Such datasets are scarce, both due to a lack of large, representative collections of rice field images and the time-intensive nature of annotation. To address this gap, we established the first comprehensive multi-class rice semantic segmentation dataset, RiceSEG. We gathered nearly 50,000 high-resolution, ground-based images from five major rice-growing countries (China, Japan, India, the Philippines, and Tanzania), encompassing over 6,000 genotypes across all growth stages...
-                    <!-- From these original images, 3,078 representative samples were selected and annotated with six classes (background, green vegetation, senescent vegetation, panicle, weeds, and duckweed) to form the RiceSEG dataset. Notably, the sub-dataset from China spans all major genotypes and rice-growing environments from the northeast to the south. Both state-of-the-art convolutional neural networks and transformer-based semantic segmentation models were used as baselines. While these models perform reasonably well in segmenting background and green vegetation, they face difficulties during the reproductive stage, when canopy structures are more complex and multiple classes are involved. These findings highlight the importance of our dataset for developing specialized segmentation models for rice and other crops. -->
+                    <p class="mb-4">Developing computer vision–based rice phenotyping techniques is crucial for
+                        precision field management and accelerating breeding, thereby continuously advancing rice
+                        production. Among phenotyping tasks, distinguishing image components is a key prerequisite for
+                        characterizing plant growth and development at the organ scale, enabling deeper insights into
+                        eco-physiological processes. However, due to the fine structure of rice organs and complex
+                        illumination within the canopy, this task remains highly challenging, underscoring the need for
+                        a high-quality training dataset. Such datasets are scarce, both due to a lack of large,
+                        representative collections of rice field images and the time-intensive nature of annotation. To
+                        address this gap, we established the first comprehensive multi-class rice semantic segmentation
+                        dataset, RiceSEG. We gathered nearly 50,000 high-resolution, ground-based images from five major
+                        rice-growing countries (China, Japan, India, the Philippines, and Tanzania), encompassing over
+                        6,000 genotypes across all growth stages...
+                        <!-- From these original images, 3,078 representative samples were selected and annotated with six classes (background, green vegetation, senescent vegetation, panicle, weeds, and duckweed) to form the RiceSEG dataset. Notably, the sub-dataset from China spans all major genotypes and rice-growing environments from the northeast to the south. Both state-of-the-art convolutional neural networks and transformer-based semantic segmentation models were used as baselines. While these models perform reasonably well in segmenting background and green vegetation, they face difficulties during the reproductive stage, when canopy structures are more complex and multiple classes are involved. These findings highlight the importance of our dataset for developing specialized segmentation models for rice and other crops. -->
                     </p>
                     <!-- <a href="" class="btn btn-primary rounded-pill py-3 px-5">Read More</a> -->
                     <a href="" class="btn btn-primary rounded-pill py-3 px-5">Under Review</a>
-                    <a href="http://arxiv.org/abs/2504.02880" target="_blank" class="btn btn-primary rounded-pill py-3 px-5">arXiv</a>
+                    <a href="http://arxiv.org/abs/2504.02880" target="_blank"
+                        class="btn btn-primary rounded-pill py-3 px-5">arXiv</a>
                 </div>
                 <div class="col-lg-5 wow fadeIn" data-wow-delay="0.1s">
                     <img class="img-fluid shadowed-image" src="img/article.png" alt="">
@@ -341,7 +373,8 @@
                     <img src="img/preview-china-1.png" alt="">
                     <div class="bg-white shadow-sm text-center p-4 position-relative mt-n5 mx-4">
                         <h4 class="text-primary">From China</h4>
-                        <span class="text-body"><span class="text-primary">Class:</span> green_veg, scenesent_veg, panicle, weed</span>
+                        <span class="text-body"><span class="text-primary">Class:</span> green_veg, scenesent_veg,
+                            panicle, weed</span>
                     </div>
                 </a>
                 <a href="" class="d-block product-item rounded">
@@ -362,7 +395,8 @@
                     <img src="img/preview-tanzania-3.png" alt="">
                     <div class="bg-white shadow-sm text-center p-4 position-relative mt-n5 mx-4">
                         <h4 class="text-primary">From Tanzania</h4>
-                        <span class="text-body"><span class="text-primary">Class:</span> green_veg, scenesent_veg, panicle, weed</span>
+                        <span class="text-body"><span class="text-primary">Class:</span> green_veg, scenesent_veg,
+                            panicle, weed</span>
                     </div>
                 </a>
                 <a href="" class="d-block product-item rounded">
@@ -398,11 +432,12 @@
                                 <small class="fa fa-star text-primary"></small>
                             </div> -->
                             <h4 class="mb-3">National Key R&D Program of China</h4>
-                            <p>No. 2022YFD2300700, <br/>No. 2022YFE0116200, <br/>No. 2021YFD2000105</p>
+                            <p>No. 2022YFD2300700, <br />No. 2022YFE0116200, <br />No. 2021YFD2000105</p>
                             <h4 class="text-primary">Academic Sponsor</h4>
                         </div>
                         <div class="store-overlay">
-                            <a href="" class="btn btn-primary rounded-pill py-2 px-4 m-2">More Detail <i class="fa fa-arrow-right ms-2"></i></a>
+                            <a href="" class="btn btn-primary rounded-pill py-2 px-4 m-2">More Detail <i
+                                    class="fa fa-arrow-right ms-2"></i></a>
                             <!-- <a href="" class="btn btn-dark rounded-pill py-2 px-4 m-2">Add to Cart <i class="fa fa-cart-plus ms-2"></i></a> -->
                         </div>
                     </div>
@@ -416,12 +451,14 @@
                                 <small class="fa fa-star text-primary"></small>
                                 <small class="fa fa-star text-primary"></small>
                             </div> -->
-                            <h4 class="mb-3"> Young Scientists Fund of the National Natural Science Foundation of China</h4>
+                            <h4 class="mb-3"> Young Scientists Fund of the National Natural Science Foundation of China
+                            </h4>
                             <p>No. 42201437</p>
                             <h4 class="text-primary">Academic Sponsor</h4>
                         </div>
                         <div class="store-overlay">
-                            <a href="" class="btn btn-primary rounded-pill py-2 px-4 m-2">More Detail <i class="fa fa-arrow-right ms-2"></i></a>
+                            <a href="" class="btn btn-primary rounded-pill py-2 px-4 m-2">More Detail <i
+                                    class="fa fa-arrow-right ms-2"></i></a>
                             <!-- <a href="" class="btn btn-dark rounded-pill py-2 px-4 m-2">Add to Cart <i class="fa fa-cart-plus ms-2"></i></a> -->
                         </div>
                     </div>
@@ -442,7 +479,8 @@
                             <h4 class="text-primary">Academic Sponsor</h4>
                         </div>
                         <div class="store-overlay">
-                            <a href="" class="btn btn-primary rounded-pill py-2 px-4 m-2">More Detail <i class="fa fa-arrow-right ms-2"></i></a>
+                            <a href="" class="btn btn-primary rounded-pill py-2 px-4 m-2">More Detail <i
+                                    class="fa fa-arrow-right ms-2"></i></a>
                             <!-- <a href="" class="btn btn-dark rounded-pill py-2 px-4 m-2">Add to Cart <i class="fa fa-cart-plus ms-2"></i></a> -->
                         </div>
                     </div>
@@ -459,160 +497,126 @@
     <!-- Testimonial Start -->
     <div class="container-fluid testimonial py-5 my-5" id="team">
         <div class="container py-5">
-            <div class="section-title text-center mx-auto wow fadeInUp" data-wow-delay="0.1s" style="max-width: 500px;">
-                <p class="fs-5 fw-medium fst-italic text-white">Our team</p>
-                <h1 class="display-6">Organizers and collaborators</h1>
-            </div>
-            <div class="owl-carousel testimonial-carousel wow fadeInUp" data-wow-delay="0.5s">
-                <!-- <div class="testimonial-item p-4 p-lg-5">
-                    <p class="mb-4">Diam dolor diam ipsum sit. Aliqu diam amet diam et eos. Clita erat ipsum et lorem et sit, sed stet lorem sit clita duo justo</p>
-                    <div class="d-flex align-items-center justify-content-center">
-                        <img class="img-fluid flex-shrink-0" src="img/testimonial-1.jpg" alt="">
-                        <div class="text-start ms-3">
-                            <h5>Client Name</h5>
-                            <span class="text-primary">Profession</span>
-                        </div>
-                    </div>
+
+            <div class="testimonial-item p-4 p-lg-5 wow fadeInUp" data-wow-delay="0.2s">
+
+                <div class="section-title text-center mx-auto wow fadeInUp" data-wow-delay="0.1s" style="max-width: 500px;">
+                    <!-- <p class="fs-5 fw-medium fst-italic text-white">Our team</p> -->
+                    <h1 class="display-6">Our team</h1>
                 </div>
-                <div class="testimonial-item p-4 p-lg-5">
-                    <p class="mb-4">Diam dolor diam ipsum sit. Aliqu diam amet diam et eos. Clita erat ipsum et lorem et sit, sed stet lorem sit clita duo justo</p>
-                    <div class="d-flex align-items-center justify-content-center">
-                        <img class="img-fluid flex-shrink-0" src="img/testimonial-2.jpg" alt="">
-                        <div class="text-start ms-3">
-                            <h5>Client Name</h5>
-                            <span class="text-primary">Profession</span>
+
+                <p class="mb-4"><span class="text-primary">17</span> Contributors from <span
+                        class="text-primary">13</span> universities and institutions</p>
+
+                <!-- 使用 CSS Grid 自动排列 Logo -->
+                <div class="logo-grid">
+                    <!-- 示例：每个 Logo 项 -->
+
+                    <div class="logo-item">
+                        <img class="img-fluid" src="img/logo/南农.png" alt="">
+                        <div class="logo-text">
+                            <h6>NanJing Agricultural University</h6>
+                            <!-- <span class="text-primary">School of Information and Electrical Engineering</span> -->
                         </div>
                     </div>
+
+                    <div class="logo-item">
+                        <img class="img-fluid" src="img/logo/utokyo.svg" alt="">
+                        <div class="logo-text">
+                            <h6>The University of Tokyo</h6>
+                            <!-- <span class="text-primary">School of Information and Electrical Engineering</span> -->
+                        </div>
+                    </div>
+
+                    <div class="logo-item">
+                        <img class="img-fluid" src="img/logo/Indian Institute of Technology.png" alt="">
+                        <div class="logo-text">
+                            <h6>Indian Institute of Technology</h6>
+                            <!-- <span class="text-primary">School of Information and Electrical Engineering</span> -->
+                        </div>
+                    </div>
+
+                    <div class="logo-item">
+                        <img class="img-fluid" src="img/logo/TSAU.png" alt="">
+                        <div class="logo-text">
+                            <h6>Professor Jayashankar Telangana Agricultural State University</h6>
+                            <!-- <span class="text-primary">School of Information and Electrical Engineering</span> -->
+                        </div>
+                    </div>
+
+                    <div class="logo-item">
+                        <img class="img-fluid" src="img/logo/kyoto-university.png" alt="">
+                        <div class="logo-text">
+                            <h6>Kyoto University</h6>
+                            <!-- <span class="text-primary">School of Information and Electrical Engineering</span> -->
+                        </div>
+                    </div>
+
+                    <div class="logo-item">
+                        <img class="img-fluid" src="img/logo/华中科技大学.png" alt="">
+                        <div class="logo-text">
+                            <h6>HuaZhong University of Science and Technology</h6>
+                            <!-- <span class="text-primary">Profession</span> -->
+                        </div>
+                    </div>
+
+                    <div class="logo-item">
+                        <img class="img-fluid" src="img/logo/华中农大.png" alt="">
+                        <div class="logo-text">
+                            <h6>HuaZhong Agricultural University</h6>
+                            <!-- <span class="text-primary">School of Information and Electrical Engineering</span> -->
+                        </div>
+                    </div>
+
+                    <div class="logo-item">
+                        <img class="img-fluid" src="img/logo/中国科学院区划所.png" alt="">
+                        <div class="logo-text">
+                            <h6>The Institute of Agricultural Resources and Regional Planning</h6>
+                            <p class="text-primary" style="font-size: 0.875rem;">Chinese Academy of Agricultural Sciences</p>
+                        </div>
+                    </div>
+
+                    <div class="logo-item">
+                        <img class="img-fluid" src="img/logo/中科院深圳先进院.png" alt="">
+                        <div class="logo-text">
+                            <h6>Shenzhen Institutes of Advanced Technology</h6>
+                            <p class="text-primary" style="font-size: 0.875rem;">Chinese Academy of Science</p>
+                        </div>
+                    </div>
+
+                    <div class="logo-item">
+                        <img class="img-fluid" src="img/logo/沈阳农大.png" alt="">
+                        <div class="logo-text">
+                            <h6>ShenYang Agricultural University</h6>
+                            <!-- <span class="text-primary">School of Information and Electrical Engineering</span> -->
+                        </div>
+                    </div>
+
+                    <div class="logo-item">
+                        <img class="img-fluid" src="img/logo/吉林省农业科学院.png" alt="">
+                        <div class="logo-text">
+                            <h6>JiLin Academy of Agricultural Sciences</h6>
+                            <!-- <span class="text-primary">School of Information and Electrical Engineering</span> -->
+                        </div>
+                    </div>
+
+                    <div class="logo-item">
+                        <img class="img-fluid" src="img/logo/作科所.png" alt="">
+                        <div class="logo-text">
+                            <h6>Institute of Crop Sciences</h6>
+                            <p class="text-primary" style="font-size: 0.875rem;">Chinese Academy of Science</p>
+                        </div>
+                    </div>
+
+                    <div class="logo-item">
+                        <img class="img-fluid" src="img/logo/隆平高科.png" alt="">
+                        <div class="logo-text">
+                            <h6> YuanLongPing High-Tech Agriculture Co., Ltd.</h6>
+                            <!-- <span class="text-primary">School of Information and Electrical Engineering</span> -->
+                        </div>
+                    </div>
+
                 </div>
-                <div class="testimonial-item p-4 p-lg-5">
-                    <p class="mb-4">Diam dolor diam ipsum sit. Aliqu diam amet diam et eos. Clita erat ipsum et lorem et sit, sed stet lorem sit clita duo justo</p>
-                    <div class="d-flex align-items-center justify-content-center">
-                        <img class="img-fluid flex-shrink-0" src="img/testimonial-3.jpg" alt="">
-                        <div class="text-start ms-3">
-                            <h5>Client Name</h5>
-                            <span class="text-primary">Profession</span>
-                        </div>
-                    </div>
-                </div> -->
-                <table class="table">
-                    <style>
-                        thead td {
-                            font-weight: bold;
-                        }
-                    </style>
-                    <thead>
-                        <tr>
-                            <td>First Name</td>
-                            <td>Last Name</td>
-                            <td>Organzation</td>
-                            <td>Role</td>
-                        </tr>
-                    </thead>
-                    <tbody>
-                        <tr>
-                            <td>Yanfeng</td>
-                            <td>Ding</td>
-                            <td>Nanjing Agricultural University</td>
-                            <td>Supervision</td>
-                        </tr>
-                        <tr>
-                            <td>Shouyang</td>
-                            <td>Liu</td>
-                            <td>Nanjing Agricultural University</td>
-                            <td>Supervision, Manuscript editing</td>
-                        </tr>
-                        <tr>
-                            <td>Wei</td>
-                            <td>Guo</td>
-                            <td>The University of Tokyo</td>
-                            <td>Supervision, Website management</td>
-                        </tr>
-                        <tr>
-                            <td>Yoichiro</td>
-                            <td>Kato</td>
-                            <td>The University of Tokyo</td>
-                            <td>Data resources</td>
-                        </tr>
-                        <tr>
-                            <td>Haozhou</td>
-                            <td>Wang</td>
-                            <td>The University of Tokyo</td>
-                            <td>Website management</td>
-                        </tr>
-                        <tr>
-                            <td>Junchi</td>
-                            <td>Zhou</td>
-                            <td>Nanjing Agricultural University</td>
-                            <td>Conceptualization, Methodology, Manuscript editing</td>
-                        </tr>
-                        <tr>
-                            <td>Tejasri</td>
-                            <td>Nampally</td>
-                            <td>Indian Institute of Technology Hyderabad</td>
-                            <td>Data curation, Resources</td>
-                        </tr>
-                        <tr>
-                            <td>P</td>
-                            <td>Rajalakshmi</td>
-                            <td>Indian Institute of Technology Hyderabad</td>
-                            <td>Data resources</td>
-                        </tr>
-                        <tr>
-                            <td>M.</td>
-                            <td>Balram</td>
-                            <td>Jayashankar Telangana Agricultural State University</td>
-                            <td>Data resources</td>
-                        </tr>
-                        <tr>
-                            <td>Keisuke</td>
-                            <td>Katsura</td>
-                            <td>Kyoto University</td>
-                            <td>Data resources</td>
-                        </tr>
-                        <tr>
-                            <td>Hao</td>
-                            <td>Lu</td>
-                            <td>Huazhong University of Science and Technology</td>
-                            <td>Software, Validation</td>
-                        </tr>
-                        <tr>
-                            <td>Lizhong</td>
-                            <td>Xiong</td>
-                            <td>Huazhong Agricultural University</td>
-                            <td>Data curation, Resources</td>
-                        </tr>
-                        <tr>
-                            <td>Yangmingrui</td>
-                            <td>Gao</td>
-                            <td>Nanjing Agricultural University</td>
-                            <td>Investigation, Manuscript drafting</td>
-                        </tr>
-                        <tr>
-                            <td>Feng</td>
-                            <td>Xiao</td>
-                            <td>Nanjing Agricultural University</td>
-                            <td>Software, Validation</td>
-                        </tr>
-                        <tr>
-                            <td>Wanneng</td>
-                            <td>Yang</td>
-                            <td>Huazhong Agricultural University</td>
-                            <td>Data curation</td>
-                        </tr>
-                        <tr>
-                            <td>Wenjuan</td>
-                            <td>Ji</td>
-                            <td>Chinese Academy of Agricultural Sciences</td>
-                            <td>Data curation</td>
-                        </tr>
-                        <tr>
-                            <td>Jingwen</td>
-                            <td>Wang</td>
-                            <td>Chinese Academy of Science</td>
-                            <td>Investigation, Manuscript drafting</td>
-                        </tr>
-                    </tbody>
-                </table>
             </div>
         </div>
     </div>
@@ -711,11 +715,13 @@
         <div class="container">
             <div class="row">
                 <div class="col-md-6 text-center text-md-start mb-3 mb-md-0">
-                    &copy; <a class="fw-medium" href="#">Global RiceSEG Datasets</a>, <br/>All Right Reserved.
+                    &copy; <a class="fw-medium" href="#">Global RiceSEG Datasets</a>, <br />All Right Reserved.
                 </div>
                 <div class="col-md-6 text-center text-md-end">
                     <!--/*** This template is free as long as you keep the footer author’s credit link/attribution link/backlink. If you'd like to use the template without the footer author’s credit link/attribution link/backlink, you can purchase the Credit Removal License from "https://htmlcodex.com/credit-removal". Thank you for your support. ***/-->
-                    Designed By <a class="fw-medium" href="https://htmlcodex.com">HTML Codex</a> Distributed By <a class="fw-medium" href="https://themewagon.com">ThemeWagon</a><br/>Website Maintained By <a class="fw-medium" href="https://www.haozhou.wang">Haozhou Wang</a>
+                    Designed By <a class="fw-medium" href="https://htmlcodex.com">HTML Codex</a> Distributed By <a
+                        class="fw-medium" href="https://themewagon.com">ThemeWagon</a><br />Website Maintained By <a
+                        class="fw-medium" href="https://www.haozhou.wang">Haozhou Wang</a>
                 </div>
             </div>
         </div>
@@ -724,7 +730,8 @@
 
 
     <!-- Back to Top -->
-    <a href="#" class="btn btn-lg btn-primary btn-lg-square rounded-circle back-to-top"><i class="bi bi-arrow-up"></i></a>
+    <a href="#" class="btn btn-lg btn-primary btn-lg-square rounded-circle back-to-top"><i
+            class="bi bi-arrow-up"></i></a>
 
 
     <!-- JavaScript Libraries -->
